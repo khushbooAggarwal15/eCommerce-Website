@@ -38,7 +38,7 @@ Men Olive Green Regular Fit Solid Casual Shirt</h4>
                 <option>Select Size</option>
                 <option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
             <input type="number" value="1">
-            <a href="" class="btn">Add To Cart</a><h3>Product Details</h3>
+            <a href="" class="btn" onclick="add()">Add To Cart</a><h3>Product Details</h3>
             <p>Olive green solid casual shirt, has a spread collar, long sleeves, button placket, curved hem, and 1 patch pocket</p></div>
             </div></div>
         <div class="small-container">
@@ -119,6 +119,7 @@ Men Olive Green Regular Fit Solid Casual Shirt</h4>
         var MenuItems=document.getElementById("MenuItems");
         MenuItems.style.maxHeight="0px";
         function menutoggle(){if(MenuItems.style.maxHeight=="0px"){MenuItems.style.maxHeight="200px";}else{MenuItems.style.maxHeight="0px";}
-                           }</script>
+                           }
+        function add(){alert("Product has been added to your cart");}</script>
     </body>
 </html>

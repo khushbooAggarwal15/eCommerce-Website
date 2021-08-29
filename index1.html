@@ -2,51 +2,68 @@
 <html>
     <head>
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Livecart</title>
+        <title>BJunction</title>
         <link rel="stylesheet" href="Style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="icon.ico">
     </head>
     <body>
        <div class="header">
         <div class="container">
         <div class="navbar">
         <div class="logo">
-        <img src="Images/livecart-logo.png" width="200px" height="60px">
+        <img src="Images/logo_b.png" width="200px" height="120px">
         </div>
         <nav>
             <ul id="MenuItems">
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="javascript:openHome()">Home</a></li>
+            <li><a href="javascript:openProduct()">Products</a></li>
+            <li><a href="javascript:openAbout()">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="">Account</a></li></ul></nav>
             <img src="Images/Icon.png" width="30px" height="30px">
-            <img src="Images/menu.png" width="30px" class="menu-icon" onclick="menutoggle()"></div> 
+            <img src="Images/menu.png" width="30px" class="menu-icon" onclick="menutoggle()"></div>
             <div class="row">
             <div class="col-2">
             <h1>Your Gateway To<br> Great Shopping!</h1>
             <p>Whatever you’ve got in mind, we’ve got inside.
                 <br>
-                <b>Seek. Find. Enjoy.</b></p> 
+                <b>Seek. Find. Enjoy.</b></p>
                 <a href="product.html" class="btn">Explore now&#8594;</a>
  </div><div class="col-2">
             <img src="Images/Shopping.jpg" ></div>
             </div>
-        </div> 
+        </div>
         </div>
         <div class="categories">
             <div class="small-container">
-        <div class="row">
-                    <div class="col-3">
-            <img src="Images/images%20(89).jpg"></div>
-                <div class="col-3">
-             <img src="Images/images%20(22).jpg"></div>
-                <div class="col-3">
-             <img src="Images/download%20(11).jpg"></div>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="Images/images%20(89).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/images%20(22).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/download%20(11).jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-</div>       
-     </div> 
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+     </div>
         <div class="small-container">
         <h2 class="title">Featured Products</h2>
              <div class="row">
@@ -55,7 +72,7 @@
                         <h4>Men's Blue Checked Shirt</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
                         </div>
@@ -66,29 +83,29 @@
                         <h4>Black Sports Running Shoes for Mens</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
                         </div>
                         <p>₹2,100.00</p>
-                 </div>    
+                 </div>
                    <div class="col-4">
                         <img src="Images/shopping.webp" >
                         <h4>White Floral Print Keyhole Neck Tank Tops For Women</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
                         </div>
                         <p>₹500.00</p>
                  </div>
                      <div class="col-4">
-                        <img src="Images/images%20(100).jpg" height="200px" >
+                        <input type="image" src="Images/images%20(100).jpg" onclick="productClick()" height="200px">
                         <h4>Olive Regular Fit Solid Casual Shirt</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i>
                         </div>
@@ -101,7 +118,7 @@
                         <h4>Men's Running Shoe</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
                         </div>
@@ -112,19 +129,19 @@
                         <h4>Michael Kors DARCI Women Rose Gold Analogue Watch MK3366 (Onesize)</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i>
                         </div>
                         <p>₹10,172.00</p>
-                 </div>    
+                 </div>
                    <div class="col-4">
                                               <img src="Images/Product5.webp"  height="200px">
 
                         <h4>White Floral Print Keyhole Neck Tank Tops For Women</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
                         </div>
@@ -136,7 +153,7 @@
                         <h4>Men's Regular Fit Tank Top</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
                         </div>
@@ -148,7 +165,7 @@
                         <h4>V-line crop top for Women</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i>
                         </div>
@@ -159,7 +176,7 @@
                         <h4>Michael Kors - Watch Michael Kors Jaryn Mk3785</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i>
                         </div>
@@ -170,7 +187,7 @@
                         <h4>Men Sport Casual LED Watches Men's Digital Clock , White Silver</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i>
                         </div>
@@ -181,7 +198,7 @@
                         <h4>Chanderi Silk Lehenga</h4>
                         <div class="rating">
                         <i class="fa fa-star"></i>
-                    
+
                         <i class="fa fa-star"></i>
      <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i>
                         </div>
@@ -195,7 +212,7 @@
                 <img src="Images/Exclusive1.webp" class="offer-img" >
             </div>
                       <div class="col-2"><p>Exclusively Available on Livekart</p>
-                          <h1>Fitbit Charge 3 watch</h1><small>Heart rate monitor, exercise tracker with 15 modes, menstrual cycle tracker, water-resistant up to 50m, sleep tracker, seven day battery life, weather app, swim setting.</small><br> 
+                          <h1>Fitbit Charge 3 watch</h1><small>Heart rate monitor, exercise tracker with 15 modes, menstrual cycle tracker, water-resistant up to 50m, sleep tracker, seven day battery life, weather app, swim setting.</small><br>
             <a href="" class="btn">Buy now&#8594</a></div></div></div></div>
          <div class="testimonial">
         <div class="small-container">            <div class="row">
@@ -205,7 +222,7 @@
                 <div class="rating">
                         <i class="fa fa-star"></i>
                      <i class="fa fa-star"></i>
-     <i class="fa fa-star"></i> 
+     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                         </div>
@@ -218,7 +235,7 @@
                 <div class="rating">
                         <i class="fa fa-star"></i>
                      <i class="fa fa-star"></i>
-     <i class="fa fa-star"></i> 
+     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                         </div>
@@ -231,7 +248,7 @@
                 <div class="rating">
                         <i class="fa fa-star"></i>
                      <i class="fa fa-star"></i>
-     <i class="fa fa-star"></i> 
+     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                         </div>
@@ -252,25 +269,17 @@
                 <img src="Images/brands3.png"></div>
             <div class="col-5">
                 <img src="Images/brands4.png"></div></div></div></div>
-        <div class="footer">
+        <div class="footer" id="about">
         <div class="container">
             <div class="row">
             <div class="footer-col-1">
                 <h3>Download Our App</h3>
-                <p>Download App for Android and ios</p>
                 <div class="app-logo">
-                <img src="Images/playstore.png">
-                <img src="Images/playstore1.png"></div></div>
+                  <img class="apps" src="Images/playstore.png">
+                  <img class="apps" src="Images/playstore1.png"></div></div>
              <div class="footer-col-2">
-               <img src="Images/logo1.png">
+               <img src="Images/logo_b.png">
                 <p>Purpose of this project is to provide easy shopping facility online and<br> easy selling facility to the merchants of all categories.</p></div>
-             <div class="footer-col-3">
-                <h3>Useful Links</h3>
-               <ul>
-                 <li>Coupons</li>
-                 <li>Blog Post</li>
-                 <li>Return Policy</li>
-                 <li>Join Affairs</li></ul></div>
               <div class="footer-col-4">
                 <h3>Follow Us</h3>
                <ul>
@@ -278,11 +287,9 @@
                  <li>Instagram</li>
                  <li>Twitter</li>
                  <li>Youtube</li></ul></div></div><hr>
-            <p class="Copyright">Copyright 2020</p></div></div>
-        <script>
-        var MenuItems=document.getElementById("MenuItems");
-        MenuItems.style.maxHeight="0px";
-        function menutoggle(){if(MenuItems.style.maxHeight=="0px"){MenuItems.style.maxHeight="200px";}else{MenuItems.style.maxHeight="0px";}
-                           }</script> 
+            <p class="Credits">Project By:&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKhushboo Aggarwal&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrachi Puri&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAkshit Kaushik&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAakash Dixit</p></div></div>
+        <script src="script.js">
+
+        </script>
     </body>
 </html>
